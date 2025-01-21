@@ -28,9 +28,10 @@ namespace VL.Devices.IDS
                     {
                         try
                         {
+                            a.NodeMap.StoreToFile(filePath.ToString());
                             //a.NodeMap.StoreToFile(filePath.ToString());
-                            a.NodeMap.FindNodeString("UEyeParametersetPath").SetValue(filePath.ToString());
-                            a.NodeMap.FindNodeCommand("UEyeParametersetSave").Execute();
+                            //a.NodeMap.FindNodeString("UEyeParametersetPath").SetValue(filePath.ToString());
+                            //a.NodeMap.FindNodeCommand("UEyeParametersetSave").Execute();
                         }
                         catch (Exception e)
                         {

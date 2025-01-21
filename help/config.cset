@@ -1,0 +1,39 @@
+# {05D8C294-F295-4dfb-9D01-096BD04049F4}
+# GenApi persistence file (version 3.4.1)
+# Device = IDS_Imaging_Development_Systems_GmbH::U3_368x_NIR --  -- Device version = 3.30.0 -- Product GUID = 6b2eb4fd-f063-70c3-a8f6-38933582fa89 -- Product version GUID = cfa3e929-166d-9e45-afc8-250f34d15db5
+TriggerSelector	ExposureStart
+TriggerSelector	ExposureStart
+TriggerSelector	ExposureStart
+TriggerSelector	ExposureStart
+TriggerSelector	ExposureStart
+SensorFrameTimeClocksTarget	7500000
+AcquisitionFrameRateTargetEnable	0
+SensorExposureTimeClocks	15316169
+SensorFrameTimeClocks	15319200
+EventNotification	{EventSelector=Error}	Off
+EventNotification	{EventSelector=CriticalError}	On
+EventNotification	{EventSelector=EventDropped}	On
+EventSelector	EventDropped
+LEDTriggerSource	{LEDSelector=LEDStatus}	CameraStatus
+LEDSelector	LEDStatus
+LineMode	{LineSelector=Line2}	Input
+LineMode	{LineSelector=Line3}	Input
+LineSelector	Line0
+LineInverter	{LineSelector=Line1}	0
+LineInverter	{LineSelector=Line2}	0
+LineInverter	{LineSelector=Line3}	0
+LineSelector	Line0
+UserOutputValue	{UserOutputSelector=UserOutput0}	0
+UserOutputValue	{UserOutputSelector=UserOutput1}	0
+UserOutputValue	{UserOutputSelector=UserOutput2}	0
+UserOutputValue	{UserOutputSelector=UserOutput3}	0
+UserOutputSelector	UserOutput0
+LineSource	{LineSelector=Line2}	Off
+LineSource	{LineSelector=Line3}	Off
+LineSelector	Line0
+BinningSelector	Sensor
+BinningSelector	Sensor
+Gain	{GainSelector=AnalogAll}	15
+Gain	{GainSelector=DigitalAll}	1
+GainSelector	AnalogAll
+BlackLevelInt	25165824
