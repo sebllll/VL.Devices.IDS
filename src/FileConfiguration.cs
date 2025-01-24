@@ -1,4 +1,5 @@
-﻿/*using peak.core;
+﻿using peak.core;
+using VL.Devices.IDS.Advanced;
 using Path = VL.Lib.IO.Path;
 
 namespace VL.Devices.IDS
@@ -35,11 +36,17 @@ namespace VL.Devices.IDS
         {
             if (File.Exists)
             {
-                //nodeMap.LoadFromFile(File.ToString());
-                nodeMap.FindNodeString("UEyeParametersetPath").SetValue(File.ToString());
-                nodeMap.FindNodeCommand("UEyeParametersetLoad").Execute();
+                //nodeMap.FindNodeEnumeration("UserSetSelector").SetCurrentEntry("UserSet1");
+                //nodeMap.InvalidateNodes();
+                nodeMap.LoadFromFile(File.ToString());
+                //nodeMap.FindNodeCommand("UserSetSave").Execute();
+                //nodeMap.FindNodeCommand("UserSetSave").WaitUntilDone();
+
+
+
+                //nodeMap.FindNodeString("UEyeParametersetPath").SetValue(File.ToString());
+                //nodeMap.FindNodeCommand("UEyeParametersetLoad").Execute();
             }
         }
     }
 }
-*/
